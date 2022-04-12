@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931593D22806217C003FB312 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931593D12806217C003FB312 /* iOSDropDown.swift */; };
 		934B6C36280561A30073B3E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B6C35280561A30073B3E5 /* AppDelegate.swift */; };
 		934B6C38280561A30073B3E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B6C37280561A30073B3E5 /* SceneDelegate.swift */; };
 		934B6C3A280561A30073B3E5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B6C39280561A30073B3E5 /* FeedViewController.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		1FB829213F76880FE93F2C1C /* Pods_SSN_Simple_Social_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSN_Simple_Social_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931593D12806217C003FB312 /* iOSDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		934B6C32280561A30073B3E5 /* SSN-Simple Social Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSN-Simple Social Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		934B6C35280561A30073B3E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		934B6C37280561A30073B3E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				938DE11F280572CA0024AF27 /* Feed */,
 				938DE114280566E30024AF27 /* BaseView.swift */,
 				938DE1382805981C0024AF27 /* CircularImage.swift */,
+				931593D12806217C003FB312 /* iOSDropDown.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931593D22806217C003FB312 /* iOSDropDown.swift in Sources */,
 				938DE13C28059F130024AF27 /* UserRepository.swift in Sources */,
 				938DE117280568720024AF27 /* FeedPresenter.swift in Sources */,
 				938DE10C280566460024AF27 /* Array.swift in Sources */,

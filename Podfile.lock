@@ -1,20 +1,16 @@
 PODS:
-  - iOSDropDown (0.3.4)
   - KMPlaceholderTextView (1.4.0)
 
 DEPENDENCIES:
-  - iOSDropDown
   - KMPlaceholderTextView (~> 1.4.0)
 
 SPEC REPOS:
   trunk:
-    - iOSDropDown
     - KMPlaceholderTextView
 
 SPEC CHECKSUMS:
-  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
   KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
 
-PODFILE CHECKSUM: f7136e01a8d2c5c64de3c9f8192399c5dfbe335b
+PODFILE CHECKSUM: 4f330afef6eee3b5027a0d05e4f0b5cb7dfef5b0
 
 COCOAPODS: 1.11.2

@@ -54,7 +54,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVm-nI-UzG" customClass="DropDown" customModule="iOSDropDown">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVm-nI-UzG" customClass="DropDown" customModule="SSN_Simple_Social_Network" customModuleProvider="target">
                                         <rect key="frame" x="270" y="15" width="128" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="Ifw-QB-pSw"/>
@@ -203,11 +203,6 @@
             <point key="canvasLocation" x="883" y="116"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="GVm-nI-UzG">
-            <size key="intrinsicContentSize" width="113" height="34"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Placeholder" width="1920" height="1280"/>
         <systemColor name="systemBackgroundColor">
