@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
+    // source: https://nshipster.com/temporary-files/
     func saveLocally() -> URL? {
         do {
             let temporaryDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory(),
