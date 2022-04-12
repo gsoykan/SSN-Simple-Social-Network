@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostHeaderView" customModule="SSN_Simple_Social_Network" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0Jq-Qr-uNg"/>
+                <outlet property="nameLabel" destination="PRQ-hW-UqL" id="VU8-Pf-qLp"/>
+                <outlet property="profileImage" destination="ME2-Ey-qsv" id="PYk-Ow-x19"/>
+                <outlet property="usernameLabel" destination="VkS-s4-1UI" id="ocG-8c-vZx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileOne" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-Ey-qsv" customClass="CircularImage" customModule="SSN_Simple_Social_Network" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Aqo-3F-1sP"/>
+                        <constraint firstAttribute="height" constant="64" id="u5c-BS-zsH"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PXy-3G-Dnu">
+                    <rect key="frame" x="88" y="16" width="160" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRQ-hW-UqL">
+                            <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="48"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkS-s4-1UI">
+                            <rect key="frame" x="74.333333333333343" y="0.0" width="85.666666666666657" height="48"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PXy-3G-Dnu" secondAttribute="trailing" constant="16" id="AC4-iF-CMh"/>
+                <constraint firstItem="PXy-3G-Dnu" firstAttribute="leading" secondItem="ME2-Ey-qsv" secondAttribute="trailing" constant="16" id="DCY-VK-XWT"/>
+                <constraint firstItem="PXy-3G-Dnu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="I94-vN-EAp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PXy-3G-Dnu" secondAttribute="bottom" constant="16" id="LDw-bp-k6f"/>
+                <constraint firstItem="ME2-Ey-qsv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="LES-YB-OTS"/>
+                <constraint firstItem="ME2-Ey-qsv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="jb3-oA-qIu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ME2-Ey-qsv" secondAttribute="bottom" constant="8" id="zp7-fg-s5T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-89.855072463768124" y="-90.489130434782609"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ME2-Ey-qsv">
+            <size key="intrinsicContentSize" width="400" height="400"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ProfileOne" width="400" height="400"/>
+    </resources>
+</document>

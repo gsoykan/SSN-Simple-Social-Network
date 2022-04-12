@@ -1,0 +1,20 @@
+PODS:
+  - iOSDropDown (0.3.4)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - iOSDropDown
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - iOSDropDown
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 659046c553d09e813b60d69b1965191f2f87f917
+
+COCOAPODS: 1.11.2
