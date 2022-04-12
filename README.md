@@ -19,3 +19,9 @@ Project includes two external dependencies
 ```
   pod 'iOSDropDown'
   pod 'KMPlaceholderTextView', '~> 1.4.0'
+````
+
+<p align="center">
+  <img src="./repo_assets/IMG_251302780C25-1.jpeg" width="250" title="Feed">
+  <img src="./repo_assets/IMG_3684DA81FDA3-1.jpeg" width="250" title="Create Post" alt="create post">
+</p>
