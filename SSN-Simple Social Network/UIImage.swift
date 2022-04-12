@@ -40,7 +40,3 @@ extension UIImage {
         }
     }
 }
-
-// file:///var/mobile/Containers/Data/Application/26A22079-E256-4091-9D52-ABCA7EE62623/Documents/A00454D8-C458-483F-9921-49EF8586D501.png
-
-//
