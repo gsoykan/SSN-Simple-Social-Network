@@ -13,7 +13,7 @@ class FeedViewController: BaseViewController,
     private var presenter: FeedPresenter!
     var posts: [Post]? {
         didSet {
-            // TODO: @gsoykan make this better
+            // TODO: @gsoykan this can be better implemented by adding a single element instead of reloading all data at once!
             tableView.reloadData()
         }
     }
@@ -34,13 +34,24 @@ class FeedViewController: BaseViewController,
     }
     
     func setDropDownUsers() {
-        selectUserDropDown.optionArray = posts?.map{ $0.user.name } ?? []
+        selectUserDropDown.optionArray = presenter.allUsers?.map({$0.name}) ?? []
         selectUserDropDown.didSelect(completion: didSelectDropDown)
         selectUserDropDown.selectedIndex = presenter.currentUserIndex
     }
     
     private func didSelectDropDown(_ selectedText: String, _ index: Int , _ id:Int ) -> () {
         presenter.setCurrentUser(index)
+    }
+    
+    @IBAction func didTapAddPost(_ sender: UIButton) {
+        let createPostVC = UIStoryboard.main.instantiate(CreatePostViewController.self)
+        createPostVC?.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        createPostVC?.feedDelegate = self
+        presentNullable(createPostVC)
+    }
+    
+    func addNewPost(_ post: Post) {
+        posts?.append(post)
     }
 }
 
@@ -62,7 +73,7 @@ extension FeedViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.typeName, for: indexPath) as? PostTableViewCell else {
             return UITableViewCell()
         }
-        guard let post =  posts?[safeIndex: indexPath.item] else {
+        guard let post =  posts?.reversed()[safeIndex: indexPath.item] else {
             cell.reset()
             return cell
         }

@@ -21,9 +21,13 @@ struct SSNImage: Codable {
     func loadImage(completion: @escaping (Result<UIImage?, Error>) -> Void ) throws {
         switch source {
         case .asset:
-            return completion(Result.success(UIImage(named: path)))
+            completion(Result.success(UIImage(named: path)))
         case .local:
-            throw SSNError.UnimplementedSSNImageSource(source: source.rawValue)
+            guard let url = URL(string: path) else {
+                completion(Result.failure(SSNError.InvalidImagePathError(path: path)))
+                return
+            }
+            completion(Result.success(UIImage(withContentsOfUrl: url)))
         case .network:
             throw SSNError.UnimplementedSSNImageSource(source: source.rawValue)
         }

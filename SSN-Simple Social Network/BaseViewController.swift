@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import SVProgressHUD
 
 class BaseViewController: UIViewController,
                           NameDescribable,
@@ -20,27 +19,9 @@ class BaseViewController: UIViewController,
         present(viewController, animated: flag, completion: completion)
     }
     
-    func showActivityIndicator() {
-        DispatchQueue.main.async {
-            SVProgressHUD.show()
-        }
-    }
-    
-    func hideActivityIndicator() {
-        DispatchQueue.main.async {
-            SVProgressHUD.dismiss()
-        }
-    }
-    
-    func showError(_ message: String? = nil) {
-        DispatchQueue.main.async {
-            SVProgressHUD.showError(withStatus: message)
-        }
-    }
-    
-    func showSuccess(_ message: String? = nil) {
-        DispatchQueue.main.async {
-            SVProgressHUD.showSuccess(withStatus: message)
-        }
+    func showError(_ message: String?) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

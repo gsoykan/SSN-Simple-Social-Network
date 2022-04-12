@@ -43,6 +43,10 @@
 		938DE1422805A6300024AF27 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1412805A6300024AF27 /* DataRepository.swift */; };
 		938DE1442805A9B70024AF27 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1432805A9B70024AF27 /* General.swift */; };
 		938DE1462805C1A90024AF27 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1452805C1A90024AF27 /* Changeable.swift */; };
+		938DE14A2805C5B60024AF27 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1492805C5B60024AF27 /* CreatePostViewController.swift */; };
+		938DE14C2805C5C30024AF27 /* CreatePostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE14B2805C5C30024AF27 /* CreatePostPresenter.swift */; };
+		938DE14E2805C5D20024AF27 /* CreatePostDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE14D2805C5D20024AF27 /* CreatePostDelegate.swift */; };
+		938DE1502805D12B0024AF27 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE14F2805D12B0024AF27 /* ImagePicker.swift */; };
 		D4696870187BE734AEFAEC9E /* Pods_SSN_Simple_Social_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB829213F76880FE93F2C1C /* Pods_SSN_Simple_Social_Network.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		938DE1412805A6300024AF27 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		938DE1432805A9B70024AF27 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		938DE1452805C1A90024AF27 /* Changeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Changeable.swift; sourceTree = "<group>"; };
+		938DE1492805C5B60024AF27 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		938DE14B2805C5C30024AF27 /* CreatePostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostPresenter.swift; sourceTree = "<group>"; };
+		938DE14D2805C5D20024AF27 /* CreatePostDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostDelegate.swift; sourceTree = "<group>"; };
+		938DE14F2805D12B0024AF27 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C320A28E281F83C7AE67143C /* Pods-SSN-Simple Social Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN-Simple Social Network.release.xcconfig"; path = "Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network.release.xcconfig"; sourceTree = "<group>"; };
 		F73DB797905331F91B69CAFC /* Pods-SSN-Simple Social Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN-Simple Social Network.debug.xcconfig"; path = "Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +205,9 @@
 		938DE0FD2805635D0024AF27 /* CreatePost */ = {
 			isa = PBXGroup;
 			children = (
+				938DE1492805C5B60024AF27 /* CreatePostViewController.swift */,
+				938DE14B2805C5C30024AF27 /* CreatePostPresenter.swift */,
+				938DE14D2805C5D20024AF27 /* CreatePostDelegate.swift */,
 			);
 			name = CreatePost;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				938DE130280583100024AF27 /* SSNError.swift */,
+				938DE14F2805D12B0024AF27 /* ImagePicker.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -434,19 +446,23 @@
 				938DE105280564230024AF27 /* NameDescribable.swift in Sources */,
 				934B6C3A280561A30073B3E5 /* FeedViewController.swift in Sources */,
 				934B6C36280561A30073B3E5 /* AppDelegate.swift in Sources */,
+				938DE1502805D12B0024AF27 /* ImagePicker.swift in Sources */,
 				938DE13E28059F1D0024AF27 /* PostRepository.swift in Sources */,
+				938DE14A2805C5B60024AF27 /* CreatePostViewController.swift in Sources */,
 				938DE11C280568E50024AF27 /* Post.swift in Sources */,
 				938DE1462805C1A90024AF27 /* Changeable.swift in Sources */,
 				938DE125280574B40024AF27 /* UIView.swift in Sources */,
 				938DE10A280565F40024AF27 /* UIStoryboard.swift in Sources */,
 				938DE1352805967B0024AF27 /* PostHeaderView.swift in Sources */,
 				938DE12E280580F10024AF27 /* SSNImage.swift in Sources */,
+				938DE14C2805C5C30024AF27 /* CreatePostPresenter.swift in Sources */,
 				938DE12A280578240024AF27 /* Constants.swift in Sources */,
 				938DE1442805A9B70024AF27 /* General.swift in Sources */,
 				934B6C38280561A30073B3E5 /* SceneDelegate.swift in Sources */,
 				938DE1422805A6300024AF27 /* DataRepository.swift in Sources */,
 				938DE100280563C40024AF27 /* BaseDelegate.swift in Sources */,
 				938DE108280565DD0024AF27 /* UITableView.swift in Sources */,
+				938DE14E2805C5D20024AF27 /* CreatePostDelegate.swift in Sources */,
 				938DE10E280566590024AF27 /* UIScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

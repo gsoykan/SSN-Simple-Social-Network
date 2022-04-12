@@ -9,4 +9,5 @@ import Foundation
 
 enum SSNError: Error {
     case UnimplementedSSNImageSource(source: String)
+    case InvalidImagePathError(path: String)
 }

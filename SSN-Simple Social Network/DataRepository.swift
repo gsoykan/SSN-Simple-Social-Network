@@ -41,9 +41,9 @@ extension DataRepository  {
         elements = data
     }
     
-    func add(_ user: T) {
+    func add(_ element: T) {
         var arr = self.elements ?? []
-        arr.append(user)
+        arr.append(element)
         storeInfo(data: arr)
     }
 }

@@ -8,8 +8,5 @@
 import Foundation
 
 protocol BaseDelegate: AnyObject {
-    func showActivityIndicator()
-    func hideActivityIndicator()
     func showError(_ message: String?)
-    func showSuccess(_ message: String?)
 }

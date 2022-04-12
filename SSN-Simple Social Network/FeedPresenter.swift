@@ -19,6 +19,10 @@ class FeedPresenter {
         get { UserRepository.shared.currentUserWithIndex.1 }
     }
     
+    var allUsers: [User]? {
+        get { UserRepository.shared.elements }
+    }
+    
     func loadPosts() {
         delegate.posts = PostRepository.shared.getInfo()
         delegate.setDropDownUsers()
