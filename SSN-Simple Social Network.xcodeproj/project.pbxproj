@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		931593D22806217C003FB312 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931593D12806217C003FB312 /* iOSDropDown.swift */; };
+		931593D528062427003FB312 /* KMPlaceholderTextView in Frameworks */ = {isa = PBXBuildFile; productRef = 931593D428062427003FB312 /* KMPlaceholderTextView */; };
 		934B6C36280561A30073B3E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B6C35280561A30073B3E5 /* AppDelegate.swift */; };
 		934B6C38280561A30073B3E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B6C37280561A30073B3E5 /* SceneDelegate.swift */; };
 		934B6C3A280561A30073B3E5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B6C39280561A30073B3E5 /* FeedViewController.swift */; };
@@ -48,11 +49,9 @@
 		938DE14C2805C5C30024AF27 /* CreatePostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE14B2805C5C30024AF27 /* CreatePostPresenter.swift */; };
 		938DE14E2805C5D20024AF27 /* CreatePostDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE14D2805C5D20024AF27 /* CreatePostDelegate.swift */; };
 		938DE1502805D12B0024AF27 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE14F2805D12B0024AF27 /* ImagePicker.swift */; };
-		D4696870187BE734AEFAEC9E /* Pods_SSN_Simple_Social_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB829213F76880FE93F2C1C /* Pods_SSN_Simple_Social_Network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FB829213F76880FE93F2C1C /* Pods_SSN_Simple_Social_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSN_Simple_Social_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931593D12806217C003FB312 /* iOSDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		934B6C32280561A30073B3E5 /* SSN-Simple Social Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSN-Simple Social Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		934B6C35280561A30073B3E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +95,6 @@
 		938DE14B2805C5C30024AF27 /* CreatePostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostPresenter.swift; sourceTree = "<group>"; };
 		938DE14D2805C5D20024AF27 /* CreatePostDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostDelegate.swift; sourceTree = "<group>"; };
 		938DE14F2805D12B0024AF27 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		C320A28E281F83C7AE67143C /* Pods-SSN-Simple Social Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN-Simple Social Network.release.xcconfig"; path = "Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network.release.xcconfig"; sourceTree = "<group>"; };
-		F73DB797905331F91B69CAFC /* Pods-SSN-Simple Social Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN-Simple Social Network.debug.xcconfig"; path = "Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,29 +102,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4696870187BE734AEFAEC9E /* Pods_SSN_Simple_Social_Network.framework in Frameworks */,
+				931593D528062427003FB312 /* KMPlaceholderTextView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5BEB2119955B438B4392C91D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F73DB797905331F91B69CAFC /* Pods-SSN-Simple Social Network.debug.xcconfig */,
-				C320A28E281F83C7AE67143C /* Pods-SSN-Simple Social Network.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		934B6C29280561A30073B3E5 = {
 			isa = PBXGroup;
 			children = (
 				934B6C34280561A30073B3E5 /* SSN-Simple Social Network */,
 				934B6C33280561A30073B3E5 /* Products */,
-				5BEB2119955B438B4392C91D /* Pods */,
-				E8C64B9307D01AD24583B9BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -308,14 +294,6 @@
 			name = Repositories;
 			sourceTree = "<group>";
 		};
-		E8C64B9307D01AD24583B9BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1FB829213F76880FE93F2C1C /* Pods_SSN_Simple_Social_Network.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,17 +301,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 934B6C46280561A40073B3E5 /* Build configuration list for PBXNativeTarget "SSN-Simple Social Network" */;
 			buildPhases = (
-				48EDE8E8EA28363FE77E3694 /* [CP] Check Pods Manifest.lock */,
 				934B6C2E280561A30073B3E5 /* Sources */,
 				934B6C2F280561A30073B3E5 /* Frameworks */,
 				934B6C30280561A30073B3E5 /* Resources */,
-				91C1D29F808F82970C24A01D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "SSN-Simple Social Network";
+			packageProductDependencies = (
+				931593D428062427003FB312 /* KMPlaceholderTextView */,
+			);
 			productName = "SSN-Simple Social Network";
 			productReference = 934B6C32280561A30073B3E5 /* SSN-Simple Social Network.app */;
 			productType = "com.apple.product-type.application";
@@ -361,6 +340,9 @@
 				Base,
 			);
 			mainGroup = 934B6C29280561A30073B3E5;
+			packageReferences = (
+				931593D328062427003FB312 /* XCRemoteSwiftPackageReference "KMPlaceholderTextView" */,
+			);
 			productRefGroup = 934B6C33280561A30073B3E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,48 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		48EDE8E8EA28363FE77E3694 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SSN-Simple Social Network-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91C1D29F808F82970C24A01D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		934B6C2E280561A30073B3E5 /* Sources */ = {
@@ -611,7 +551,6 @@
 		};
 		934B6C47280561A40073B3E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F73DB797905331F91B69CAFC /* Pods-SSN-Simple Social Network.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -631,7 +570,6 @@
 		};
 		934B6C48280561A40073B3E5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C320A28E281F83C7AE67143C /* Pods-SSN-Simple Social Network.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -671,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		931593D328062427003FB312 /* XCRemoteSwiftPackageReference "KMPlaceholderTextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MoZhouqi/KMPlaceholderTextView.git";
+			requirement = {
+				kind = revision;
+				revision = 56fb0055fe96ad08994a8fa4132b93ce99605433;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		931593D428062427003FB312 /* KMPlaceholderTextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 931593D328062427003FB312 /* XCRemoteSwiftPackageReference "KMPlaceholderTextView" */;
+			productName = KMPlaceholderTextView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 934B6C2A280561A30073B3E5 /* Project object */;
 }

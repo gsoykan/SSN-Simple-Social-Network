@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "KMPlaceholderTextView",
+        "repositoryURL": "https://github.com/MoZhouqi/KMPlaceholderTextView.git",
+        "state": {
+          "branch": null,
+          "revision": "56fb0055fe96ad08994a8fa4132b93ce99605433",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
