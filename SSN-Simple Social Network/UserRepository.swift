@@ -14,8 +14,12 @@ class UserRepository: DataRepository {
     
     internal var userDefaults: UserDefaults
     var elements: [User]?
-    var currentUser: User? {
-        get { self.elements?.first{ $0.isCurrent == true} ?? self.elements?.first }
+    var currentUserWithIndex: (User?, Int?) {
+        get {
+            let index = self.elements?.firstIndex(where: { $0.isCurrent == true}) ?? 0
+            let user = elements?[safeIndex: index]
+            return (user, index)
+        }
     }
     
     internal var key: String
@@ -27,6 +31,9 @@ class UserRepository: DataRepository {
     }
     
     func setCurrentUser(_ user: User) {
-        // TODO: @gsoykan implement
+        let updatedElements = elements?.enumerated().map({ (enumeratedUser) in
+            return enumeratedUser.element.change(path: \.isCurrent, to: enumeratedUser.element == user ? true : false)
+        }) ?? []
+        storeInfo(data: updatedElements)
     }
 }

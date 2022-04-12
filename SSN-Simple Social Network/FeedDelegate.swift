@@ -9,4 +9,5 @@ import Foundation
 
 protocol FeedDelegate: BaseDelegate {
     var posts: [Post]? {get set}
+    func setDropDownUsers()
 }

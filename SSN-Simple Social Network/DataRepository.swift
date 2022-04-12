@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DataRepository {
+protocol DataRepository: AnyObject  {
     associatedtype T: Codable
     
     var userDefaults: UserDefaults { get set }
@@ -15,12 +15,12 @@ protocol DataRepository {
     var elements: [T]? { get set }
     var key: String { get }
     
-    mutating func add(_ element: T)
-    mutating func storeInfo(data: [T])
+    func add(_ element: T)
+    func storeInfo(data: [T])
     func getInfo() -> [T]?
 }
 
-extension DataRepository {
+extension DataRepository  {
     func getInfo() -> [T]?  {
         guard let savedData = userDefaults.object(forKey: self.key) as? Data else {
             return nil
@@ -32,7 +32,7 @@ extension DataRepository {
         return loadedData
     }
     
-    mutating func storeInfo(data: [T]) {
+    func storeInfo(data: [T]) {
         let encoder = JSONEncoder()
         guard let encoded = try? encoder.encode(data) else {
             return
@@ -41,7 +41,7 @@ extension DataRepository {
         elements = data
     }
     
-    mutating func add(_ user: T) {
+    func add(_ user: T) {
         var arr = self.elements ?? []
         arr.append(user)
         storeInfo(data: arr)

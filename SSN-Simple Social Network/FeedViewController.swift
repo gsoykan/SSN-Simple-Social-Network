@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import iOSDropDown
 
 class FeedViewController: BaseViewController,
                           FeedDelegate {
@@ -17,7 +18,9 @@ class FeedViewController: BaseViewController,
         }
     }
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var selectUserDropDown: DropDown!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +32,23 @@ class FeedViewController: BaseViewController,
         tableView.register(PostTableViewCell.self)
         presenter.loadPosts()
     }
+    
+    func setDropDownUsers() {
+        selectUserDropDown.optionArray = posts?.map{ $0.user.name } ?? []
+        selectUserDropDown.didSelect(completion: didSelectDropDown)
+        selectUserDropDown.selectedIndex = presenter.currentUserIndex
+    }
+    
+    private func didSelectDropDown(_ selectedText: String, _ index: Int , _ id:Int ) -> () {
+        presenter.setCurrentUser(index)
+    }
 }
 
 extension FeedViewController: UITableViewDelegate {
     
 }
 
-// TODO: @gsoykan add empty list view 
+// TODO: @gsoykan add empty list view, if you'd implement remove post
 extension FeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts?.count ?? 0

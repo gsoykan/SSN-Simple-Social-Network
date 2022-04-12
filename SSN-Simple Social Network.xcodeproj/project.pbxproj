@@ -42,6 +42,7 @@
 		938DE1402805A01E0024AF27 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE13F2805A01E0024AF27 /* Repository.swift */; };
 		938DE1422805A6300024AF27 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1412805A6300024AF27 /* DataRepository.swift */; };
 		938DE1442805A9B70024AF27 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1432805A9B70024AF27 /* General.swift */; };
+		938DE1462805C1A90024AF27 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DE1452805C1A90024AF27 /* Changeable.swift */; };
 		D4696870187BE734AEFAEC9E /* Pods_SSN_Simple_Social_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB829213F76880FE93F2C1C /* Pods_SSN_Simple_Social_Network.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		938DE13F2805A01E0024AF27 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		938DE1412805A6300024AF27 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		938DE1432805A9B70024AF27 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		938DE1452805C1A90024AF27 /* Changeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Changeable.swift; sourceTree = "<group>"; };
 		C320A28E281F83C7AE67143C /* Pods-SSN-Simple Social Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN-Simple Social Network.release.xcconfig"; path = "Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network.release.xcconfig"; sourceTree = "<group>"; };
 		F73DB797905331F91B69CAFC /* Pods-SSN-Simple Social Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSN-Simple Social Network.debug.xcconfig"; path = "Target Support Files/Pods-SSN-Simple Social Network/Pods-SSN-Simple Social Network.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +215,7 @@
 			children = (
 				938DE104280564230024AF27 /* NameDescribable.swift */,
 				938DE1412805A6300024AF27 /* DataRepository.swift */,
+				938DE1452805C1A90024AF27 /* Changeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				934B6C36280561A30073B3E5 /* AppDelegate.swift in Sources */,
 				938DE13E28059F1D0024AF27 /* PostRepository.swift in Sources */,
 				938DE11C280568E50024AF27 /* Post.swift in Sources */,
+				938DE1462805C1A90024AF27 /* Changeable.swift in Sources */,
 				938DE125280574B40024AF27 /* UIView.swift in Sources */,
 				938DE10A280565F40024AF27 /* UIStoryboard.swift in Sources */,
 				938DE1352805967B0024AF27 /* PostHeaderView.swift in Sources */,

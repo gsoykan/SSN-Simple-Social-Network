@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KlF-BR-Zdp">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="750"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <connections>
@@ -25,25 +25,70 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ej9-0S-9Ua"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xo-c8-VTj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6b-Wv-crb">
+                                        <rect key="frame" x="16" y="8" width="129.5" height="48"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select User" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVm-nI-UzG" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="270" y="15" width="128" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="Ifw-QB-pSw"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemPinkColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="EGG-Ab-dug"/>
+                                    <constraint firstItem="GVm-nI-UzG" firstAttribute="centerY" secondItem="3xo-c8-VTj" secondAttribute="centerY" id="Ib9-0Z-smA"/>
+                                    <constraint firstItem="c6b-Wv-crb" firstAttribute="leading" secondItem="3xo-c8-VTj" secondAttribute="leading" constant="16" id="Mtu-8q-cMc"/>
+                                    <constraint firstAttribute="trailing" secondItem="GVm-nI-UzG" secondAttribute="trailing" constant="16" id="R1J-LD-8n9"/>
+                                    <constraint firstItem="c6b-Wv-crb" firstAttribute="top" secondItem="3xo-c8-VTj" secondAttribute="top" constant="8" id="TSR-Gv-Daf"/>
+                                    <constraint firstAttribute="bottom" secondItem="c6b-Wv-crb" secondAttribute="bottom" constant="8" id="UIb-I8-sv2"/>
+                                    <constraint firstItem="GVm-nI-UzG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c6b-Wv-crb" secondAttribute="trailing" constant="16" id="kDS-Hh-xXL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KlF-BR-Zdp" secondAttribute="trailing" id="BGF-3J-gyu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3xo-c8-VTj" secondAttribute="trailing" id="C5d-o8-Vd0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KlF-BR-Zdp" secondAttribute="bottom" id="Cav-M9-1o2"/>
-                            <constraint firstItem="KlF-BR-Zdp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GbG-xA-tmQ"/>
+                            <constraint firstItem="KlF-BR-Zdp" firstAttribute="top" secondItem="3xo-c8-VTj" secondAttribute="bottom" constant="4" id="Ctn-AT-6t5"/>
+                            <constraint firstItem="3xo-c8-VTj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NHt-cp-nIq"/>
                             <constraint firstItem="KlF-BR-Zdp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pbE-Ms-JfA"/>
+                            <constraint firstItem="3xo-c8-VTj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wma-k5-kR3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="selectUserDropDown" destination="GVm-nI-UzG" id="wjB-WS-6S5"/>
                         <outlet property="tableView" destination="KlF-BR-Zdp" id="cHA-Wt-Ydu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="116"/>
+            <point key="canvasLocation" x="-7.2463768115942031" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="GVm-nI-UzG">
+            <size key="intrinsicContentSize" width="113" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
